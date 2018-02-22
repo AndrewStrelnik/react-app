@@ -169,3 +169,33 @@ body {
     color: grey;
     text-shadow: 0px 2px 3px rgba(255,255,255,0.5);
 }
+
+.ant-list-bordered,
+.stats .ant-tabs-tab,
+.stats .ant-form-item,
+.ant-card-bordered{
+    font-family: 'Arimo', sans-serif;
+}
+.compareDiv{
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+.statsField{
+    background-color: #ffffff;
+}
+.leaderBoard{
+    background-color: #ffffff;
+}
+.leaderBoard .ant-list-header{
+    margin-top: .5em;
+}
+.field {
+    padding-bottom: 20px;
+}
+.ant-list-item-content-single{
+    display: inline-block;
+}
+.ant-list-item-content-single::first-letter {
+    text-transform: uppercase;
+}
