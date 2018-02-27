@@ -15,7 +15,7 @@ class ProductRow extends React.Component {
     const product = this.props.product;
     const name = product.stocked ?
       product.name :
-      <span style={{color: 'red'}}>
+      <span className="stocked">
         {product.name}
       </span>;
     
@@ -130,7 +130,7 @@ class ProductTable extends React.Component {
     );
 
     return (
-      <table className="productTable" style={{maxWidth: "700px"}}>
+      <table className="productTable">
         <ProductTableHeader sortDir={this.state.sortDir} 
         sortBy={this.state.sortBy} 
         sortChange={this.handleSortChange}/>
@@ -156,8 +156,8 @@ class SearchBar extends React.Component {
     const filterText = this.props.filterText;
     const inStockOnly = this.props.inStockOnly;
     return (
-      <form className="SearchForm">
-        <Input placeholder="Search..." style={{ width: 'auto'}} value={filterText} onChange={this.handleFilterTextChange}/>
+      <form className="searchForm">
+        <Input placeholder="Search..." value={filterText} onChange={this.handleFilterTextChange}/>
         <p>
           <Checkbox checked={inStockOnly} onChange={this.handleInStockChange}>
           Only show products in stock
@@ -174,7 +174,7 @@ class FilterableProductTable extends React.Component {
     this.state = {
       filterText: '',
       inStockOnly: false,
-      activeProduct: 'Google Pixel',
+      activeProduct: 'Xiaomi mi4',
     };
     this.handleFilterTextChange = this.handleFilterTextChange.bind(this);
     this.handleInStockChange = this.handleInStockChange.bind(this);
@@ -268,7 +268,7 @@ class ActiveItem extends React.Component {
         <Meta
           title={this.state.activeItem.name}
         />
-        <div classsName="descriptionProduct">
+        <div className="descriptionProduct">
           <br />
           ram : {this.state.activeItem.ram}<br />
           storage : {this.state.activeItem.storage}<br />

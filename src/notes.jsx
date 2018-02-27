@@ -39,9 +39,7 @@ class NoteEditor extends Component {
     return (
       <div className="note-editor">
         <textarea placeholder="Enter your note here..." rows="5" className="textarea" value={this.state.text} onChange={this.handleTextChange}/>
-        <Button style={{ width: "20%",
-        minWidth: "fit-content",
-        alignSelf: "flex-end"}}
+        <Button className="notesButton"
         type="primary" onClick={this.handleNoteAdd}>Add</Button>
       </div>
     );

@@ -4,21 +4,20 @@ import Table from './table';
 import Products from './products';
 import Home from './home';
 import Stats from './stats';
-import {Route, Link, withRouter} from 'react-router-dom';
+import {Route, Link} from 'react-router-dom';
 import { Layout, Menu } from 'antd';
 const { Header, Content, Footer } = Layout;
 
 class App extends React.Component {
 	render() {
 		return (
-			<Layout className="layout" style={{height:"100vh"}}>
-			<Header>
-				<div className="logo" />
+			<Layout className="layout">
+			<Header className="header">
 				<Menu
 					theme="dark"
 					mode="horizontal"
 					defaultSelectedKeys={['1']}
-					style={{ lineHeight: '64px', fontSize: 'large'}}
+					className="menuBar"
 				>
 					<Menu.Item key="1"><Link to="/">Home</Link></Menu.Item>
 					<Menu.Item key="2"><Link to="/notes">Notes</Link></Menu.Item>
@@ -26,20 +25,20 @@ class App extends React.Component {
 					<Menu.Item key="4"><Link to="/stats">Stats</Link></Menu.Item>
 				</Menu>
 			</Header>
-			<Content style={{ padding: '0 30px'}}>
-				<div style={{ padding: 24 }}>
+			<Content className="mainContent">
+				<div>
 					<Route exact path="/" component={Home}/>
 					<Route path="/notes" component={Notes}/>
 					<Route path="/table" render={() => <Table products={Products} />}/>
 					<Route path="/stats" component={Stats}/>
 				</div>
 			</Content>
-			<Footer style={{ textAlign: 'center' }}>
+			<Footer className="footer">
 				My Design ©2017 Created by Andrew
 			</Footer>
-		</Layout>
+			</Layout>
 
 		)
 	}
 }
-export default withRouter(App);
+export default App;

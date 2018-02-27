@@ -27,7 +27,7 @@ class StatsForm extends Component {
 		// Only show error after a field is touched.
 		const userNameError = isFieldTouched('userName') && getFieldError('userName');
 		return (
-			<Form layout="horizontal" onSubmit={this.handleSubmit} style={{maxWidth:"250px", minWidth:"150px"}}>
+			<Form layout="horizontal" onSubmit={this.handleSubmit} className="inputForm">
 				<FormItem
 					label="Username"
 					validateStatus={userNameError ? 'error' : ''}
@@ -52,7 +52,7 @@ class StatsForm extends Component {
 				
 				<FormItem>
 					<Button
-						style={{ margin: '10px'}}
+						className="statsButton"
 						type="primary"
 						htmlType="submit"
 						onClick={this.props.handleRequest}
@@ -60,7 +60,7 @@ class StatsForm extends Component {
 						Search
 					</Button>
 					<Button
-						style={{ margin: '10px'}}
+						className="statsButton"
 						type="primary"
 						htmlType="submit"
 						onClick={this.props.handleReset}
@@ -91,7 +91,7 @@ class Results extends Component {
 				isLoaded: true,
 				playerStats: response.data.player.stats,
 				})
-			console.log(this.state.playerStats);
+			// console.log(this.state.playerStats);
 		})
 		.catch(error => {
 			console.log(error);

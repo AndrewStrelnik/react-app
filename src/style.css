@@ -110,6 +110,11 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
 }
+.notesButton{
+    width: 20%;
+    min-width: fit-content;
+    align-self: flex-end;
+}
 
 .textarea {
     width: 100%;
@@ -180,7 +185,13 @@ body {
     padding-top: 1.5em;
     padding-bottom: 1.5em;
 }
-
+.inputForm{
+    max-width: 250px;
+    min-width: 150px;
+}
+.statsButton{
+    margin: 10px;
+}
 .statsField{
     background-color: #ffffff;
 }

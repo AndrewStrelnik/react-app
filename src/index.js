@@ -4,13 +4,13 @@ import './App.css';
 import './style.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
-import {HashRouter as Router} from 'react-router-dom';
+import {BrowserRouter} from 'react-router-dom';
 
 
 
 ReactDOM.render(
-  <Router>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <App />
-  </Router>, 
+  </BrowserRouter>, 
 document.getElementById('main'));
 registerServiceWorker();
