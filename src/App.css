@@ -8,6 +8,7 @@ body{
 }
 .homepage{
   font-size: 16px;
+  text-align: center;
 }
 .redtext{
   color: red;
@@ -15,7 +16,11 @@ body{
 .App {
   text-align: center;
 }
-
+.mainPage-gif{
+  margin: 20px 0 50px;
+  width: 70%;
+  box-shadow: 6px 6px 30px 0px rgba(0,0,0,0.55);
+}
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
@@ -34,6 +39,10 @@ body{
 
 .App-intro {
   font-size: large;
+}
+
+.descriptionProduct{
+  font-family: 'Roboto', sans-serif;
 }
 
 @keyframes App-logo-spin {
@@ -69,6 +78,10 @@ strong{
   }
   .mainContent{
     padding: 0;
+  }
+  .mainPage-gif{
+    width: 90%;
+    box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.55);
   }
 }
 
@@ -168,5 +181,10 @@ table th {
   }
   table td:last-child {
     border-bottom: 0;
+  }
+  .mainPage-gif{
+    margin: 50px 0;
+    width: 90%;
+    box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.55);
   }
 }

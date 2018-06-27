@@ -34,10 +34,9 @@ class App extends React.Component {
 				</div>
 			</Content>
 			<Footer className="footer">
-				My Design ©2017 Created by Andrew
+				My Design ©2018 Created by <a href="https://github.com/AndrewStrelnik">Andrew</a>
 			</Footer>
 			</Layout>
-
 		)
 	}
 }
