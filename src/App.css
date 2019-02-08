@@ -8,6 +8,7 @@ body{
 }
 .homepage{
   font-size: 16px;
+  text-align: center;
 }
 .redtext{
   color: red;
@@ -15,7 +16,11 @@ body{
 .App {
   text-align: center;
 }
-
+.mainPage-gif{
+  margin: 20px 0 50px;
+  width: 70%;
+  box-shadow: 6px 6px 30px 0px rgba(0,0,0,0.55);
+}
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
@@ -36,11 +41,49 @@ body{
   font-size: large;
 }
 
+.descriptionProduct{
+  font-family: 'Roboto', sans-serif;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
-
+.layout{
+  height: 100vh;
+}
+.menuBar{
+  line-height: 64px;
+  font-size: large;
+}
+.ant-menu-item-selected{
+  background-color: #dddce431 !important;
+}
+.header{
+  box-shadow: 0px 0px 100px -10px #000040;
+}
+.mainContent{
+  padding: 0 30px;
+  margin: 24px;
+}
+strong{
+  font-weight: 600;
+}
+@media screen and (max-width: 376px){
+  .ant-menu-item{
+    padding: 0 15px;
+  }
+  .header{
+    padding: 0px 15px;
+  }
+  .mainContent{
+    padding: 0;
+  }
+  .mainPage-gif{
+    width: 90%;
+    box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.55);
+  }
+}
 
 table {
   border: 1px solid #ccc;
@@ -53,6 +96,13 @@ table {
 table caption {
   font-size: 1.5em;
   margin: .5em 0 .75em;
+}
+tbody tr{
+  cursor: pointer;
+  transition: background-color .1s;
+}
+tbody tr:hover{
+  background-color: #eee;
 }
 table tr {
   background: #f8f8f8;
@@ -68,6 +118,28 @@ table th {
   font-size: .85em;
   letter-spacing: .1em;
   text-transform: uppercase;
+}
+.productTable{
+  max-width: 700px;
+}
+.searchForm input{
+  width: auto;
+}
+.stocked{
+  color: red;
+}
+.footer{
+  text-align: center;
+}
+.activeItem{
+  max-width: 270px;
+}
+.cardCover{
+  max-width: 160px;
+  margin: 20px auto;
+}
+.itemField{
+  padding-top: 67px;
 }
 @media screen and (max-width: 600px) {
   table {
@@ -109,5 +181,10 @@ table th {
   }
   table td:last-child {
     border-bottom: 0;
+  }
+  .mainPage-gif{
+    margin: 50px 0;
+    width: 90%;
+    box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.55);
   }
 }

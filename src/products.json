@@ -1,13 +1,13 @@
 [
-    {"price": 149.99, "stocked": true, "name": "Xiaomi mi4"},
-    {"price": 39.99, "stocked": true, "name": "Nokia 3310"},
-    {"price": 799.99, "stocked": false, "name": "Samsung S8"},
-    {"price": 99.99, "stocked": true, "name": "iPod Touch"},
-    {"price": 499.99, "stocked": false, "name": "iPhone 5"},
-    {"price": 599.99, "stocked": true, "name": "Nexus 7"},
-    {"price": 699.99, "stocked": true, "name": "iPhone 8"},
-    {"price": 249.99, "stocked": false, "name": "Meizu M5"},
-    {"price": 1199.99, "stocked": true, "name": "Google Pixel 2"},
-    {"price": 1299.99, "stocked": false, "name": "iPhone 10"},
-    {"price": 649.99, "stocked": true, "name": "Google Pixel"}
+    {"price": 149.99, "stocked": true, "name": "Xiaomi mi4", "ram":"3gb", "storage":"16gb", "display":"5\"IPS", "img": "https://avatars.mds.yandex.net/get-mpic/195452/img_id8534607157389544931/orig"},
+    {"price": 39.99, "stocked": true, "name": "Nokia 3310", "ram":"32mb", "storage":"16mb", "display":"2.4\"TFT", "img": "https://avatars.mds.yandex.net/get-mpic/397397/img_id5835138172500121532.jpeg/orig"},
+    {"price": 799.99, "stocked": false, "name": "Samsung S8", "ram":"4gb", "storage":"64gb", "display":"5.8\"AMOLED", "img": "https://avatars.mds.yandex.net/get-mpic/195452/img_id4783826773129378920/orig"},
+    {"price": 119.99, "stocked": true, "name": "Huawei Y5", "ram":"2gb", "storage":"16gb", "display":"5\"IPS", "img": "https://avatars.mds.yandex.net/get-mpic/175985/img_id8120933834706440910/orig"},
+    {"price": 499.99, "stocked": false, "name": "iPhone 6", "ram":"1gb", "storage":"16gb", "display":"4.7\"IPS", "img": "https://avatars.mds.yandex.net/get-mpic/372220/img_id7257490756919983478.jpeg/orig"},
+    {"price": 599.99, "stocked": true, "name": "Nexus 6P", "ram":"3gb", "storage":"32gb", "display":"5.7\"AMOLED", "img": "https://avatars.mds.yandex.net/get-mpic/195452/img_id8168611843082386921/orig"},
+    {"price": 699.99, "stocked": true, "name": "iPhone 8", "ram":"2gb", "storage":"32gb", "display":"4.7\"IPS", "img": "https://avatars.mds.yandex.net/get-mpic/397397/img_id4161693246034904662.jpeg/orig"},
+    {"price": 249.99, "stocked": false, "name": "Meizu M5", "ram":"2gb", "storage":"16gb", "display":"5.2\"IPS", "img": "https://avatars.mds.yandex.net/get-mpic/96484/img_id7392010787638973795/orig"},
+    {"price": 1199.99, "stocked": true, "name": "Google Pixel 2", "ram":"4gb", "storage":"64gb", "display":"5\"AMOLED", "img": "https://avatars.mds.yandex.net/get-mpic/200316/img_id5166822287083630788.jpeg/orig"},
+    {"price": 1299.99, "stocked": false, "name": "iPhone 10", "ram":"3gb", "storage":"64gb", "display":"5.8\"AMOLED", "img": "https://avatars.mds.yandex.net/get-mpic/200316/img_id270362589725797013.png/orig"},
+    {"price": 649.99, "stocked": true, "name": "Google Pixel", "ram":"4gb", "storage":"32gb", "display":"5.7\"AMOLED", "img": "https://avatars.mds.yandex.net/get-mpic/200316/img_id2953810803922802997/orig"}
 ]
